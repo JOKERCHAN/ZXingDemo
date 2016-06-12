@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".decode.CaptureActivity">
+
+    <SurfaceView
+        android:id="@+id/preview_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <com.google.zxing.client.android.view.ViewfinderView
+        android:id="@+id/viewfinderView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:corner_color="@color/corner_color"
+        app:frame_color="@color/viewfinder_frame"
+        app:label_text="@string/scan_tip"
+        app:label_text_color="@color/scan_tip_color"
+        app:laser_color="@color/laser_color"
+        app:mask_color="@color/viewfinder_mask"
+        app:result_color="@color/result_view"
+        app:label_text_size="@dimen/scan_tip_size"
+        app:scanner_line_height="@dimen/scanner_line_height"
+        app:corner_rect_width="@dimen/corner_rect_width"
+        app:corner_rect_height="@dimen/corner_rect_height"
+        app:result_point_color="@color/result_point_color" />
+</FrameLayout>

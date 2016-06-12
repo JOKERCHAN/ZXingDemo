@@ -1,0 +1,6 @@
+<resources>
+    <dimen name="scan_tip_size">16sp</dimen>
+    <dimen name="scanner_line_height">1.5dp</dimen>
+    <dimen name="corner_rect_width">5dp</dimen>
+    <dimen name="corner_rect_height">16dp</dimen>
+</resources>
